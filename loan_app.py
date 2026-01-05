@@ -8,8 +8,7 @@ models = {
     "Logistic Regression": pickle.load(open("loan_model1.pkl", "rb")),
     "KNN": pickle.load(open("loan_model2.pkl", "rb")),
     "Decision Tree": pickle.load(open("loan_model3.pkl", "rb")),
-    "Random Forest": pickle.load(open("loan_model4.pkl", "rb")),
-    "XGBoost": pickle.load(open("loan_model5.pkl", "rb"))
+    "Random Forest": pickle.load(open("loan_model4.pkl", "rb"))
 }
 
 selected_model_name = st.selectbox("Select Model", list(models.keys()))
