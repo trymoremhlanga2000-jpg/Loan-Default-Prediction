@@ -22,10 +22,9 @@ An interactive and user-friendly **GUI** was built using **Streamlit** to showca
 
 ---
 
-## 🚀 How to Run the Application  
+## Model Deployment
+Make use of the streaamlit link below 
 
-1. Open your terminal (**CMD**, **PowerShell**, or **Git Bash**).  
-2. Navigate to the project directory.  
-3. Run the following command:  
+https://loan-default-prediction-ryn.streamlit.app/
 
 
