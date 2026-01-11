@@ -9,7 +9,7 @@ from plotly.subplots import make_subplots
 # PAGE CONFIGURATION
 # =============================
 st.set_page_config(
-    page_title="LoanElite | AI-Powered Credit Intelligence",
+    page_title="Trymore M | Credit Intelligence",
     page_icon="💎",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -288,8 +288,8 @@ def load_models():
 # =============================
 # SIDEBAR NAVIGATION
 # =============================
-st.sidebar.markdown("<h2 style='text-align: center;'>💎 LoanElite</h2>", unsafe_allow_html=True)
-st.sidebar.markdown("<div style='text-align: center; color: rgba(245, 199, 122, 0.7); margin-bottom: 30px;'>AI CREDIT INTELLIGENCE</div>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='text-align: center;'>💎 TryieDataMagics</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<div style='text-align: center; color: rgba(245, 199, 122, 0.7); margin-bottom: 30px;'>CREDIT ASSESSMENT</div>", unsafe_allow_html=True)
 
 page = st.sidebar.radio(
     "NAVIGATION",
@@ -308,10 +308,10 @@ if page == "🏠 Dashboard":
     col1, col2, col3 = st.columns([2, 1, 1])
     
     with col1:
-        st.markdown("<h1>LOANELITE INTELLIGENCE</h1>", unsafe_allow_html=True)
+        st.markdown("<h1>Credit Risk INTELLIGENCE</h1>", unsafe_allow_html=True)
         st.markdown("""
         <div style='color: rgba(245, 199, 122, 0.8); font-size: 18px; line-height: 1.6;'>
-        Advanced credit risk assessment platform leveraging 4 machine learning models 
+        A credit risk assessment platform leveraging 4 machine learning models 
         for accurate loan approval predictions. Enterprise-grade analytics with 
         multi-model validation for maximum reliability.
         </div>
@@ -1199,6 +1199,6 @@ elif page == "⚙️ System":
 # FOOTER
 # =============================
 st.markdown(
-    "<div class='footer'>LoanElite Analytics | Credit Intelligence Platform © 2024</div>",
+    "<div class='footer'>Trymore MAnalytics | Credit Intelligence Platform © 2026</div>",
     unsafe_allow_html=True
 )
