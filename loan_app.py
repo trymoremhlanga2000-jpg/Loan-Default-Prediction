@@ -836,7 +836,7 @@ elif page == "💰 Loan Application":
     st.markdown("</div>", unsafe_allow_html=True)
 
 # =============================
-# CREDIT ANALYSIS PAGE
+# CREDIT ANALYSIS PAGE - FIXED SECTION
 # =============================
 elif page == "📊 Credit Analysis":
     st.markdown("<div class='card'>", unsafe_allow_html=True)
@@ -857,7 +857,7 @@ elif page == "📊 Credit Analysis":
         orientation='h',
         marker=dict(
             color=importance,
-            colorscale='gold',
+            colorscale='YlOrBr',  # FIXED: Changed from 'gold' to valid Plotly colorscale
             showscale=True,
             colorbar=dict(title="Importance %")
         ),
@@ -885,7 +885,7 @@ elif page == "📊 Credit Analysis":
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 📚 By Education Level")
         education_stats = pd.DataFrame({
             'Education': ['Advanced/Professional', 'Graduate', 'Undergrad'],
@@ -895,7 +895,7 @@ elif page == "📊 Credit Analysis":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col2:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 💼 By Work Experience")
         experience_stats = pd.DataFrame({
             'Experience': ['10+ years', '5-10 years', '2-5 years', '< 2 years'],
@@ -905,7 +905,7 @@ elif page == "📊 Credit Analysis":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col3:
-        st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
         st.markdown("##### 💰 By Income Level")
         income_stats = pd.DataFrame({
             'Income': ['$100K+', '$60-100K', '$40-60K', '< $40K'],
@@ -915,7 +915,7 @@ elif page == "📊 Credit Analysis":
         st.markdown("</div>", unsafe_allow_html=True)
     
     # Risk Threshold Analysis
-    st.markdown("<div class='model-card'>", unsafe_allow_html=True)
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("<h4>⚖️ Risk Threshold Analysis</h4>", unsafe_allow_html=True)
     
     thresholds = [50, 55, 60, 65, 70, 75, 80, 85, 90]
